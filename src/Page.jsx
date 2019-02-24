@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Components/UI/Header/index.js';
+import Header from './Components/UI/Header/index';
+import Footer from './Components/UI/Footer/index';
 
 export default class Page extends Component {
 
@@ -9,9 +10,10 @@ export default class Page extends Component {
 
   render() {
     return(
-
-      <Header />
-
+      <div>
+      <Header />,
+      <Footer />
+      </div>
     )
   }
 
