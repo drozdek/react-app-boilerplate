@@ -5,7 +5,7 @@ import Page from './Page.jsx';
 
 ReactDOM.render(
   <div>
-   <Page />
+    <Page />
   </div>,
   document.getElementById('root')
 )
