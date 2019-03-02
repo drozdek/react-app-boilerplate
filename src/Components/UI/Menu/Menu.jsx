@@ -16,9 +16,9 @@ export default class Menu extends Component {
     return (
       <ul className={'navbar'}>
         {
-          this.JsonMenu.map(item => {
+          this.JsonMenu.map( (item, index) => {
             return (
-              <MenuItem menu={item.menuTitle} />
+              <MenuItem key={index} menu={item.menuTitle} />
             )
           })
         }
