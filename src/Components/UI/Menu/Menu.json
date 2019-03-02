@@ -11,7 +11,7 @@
     "menuText": "I am an"
   },
   {
-    "kemenuIDy": 3,
+    "menuID": 3,
     "menuTitle": "Portfolio",
     "menuLink": "PortfolioLink",
     "menuText": "Here you can "

@@ -7,20 +7,22 @@ export default class Menu extends Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     {
-      this.JsonMenu = JsonMenu;
+      this.JsonMenu = JsonMenu
     }
+
     return (
-      <ul>
+      <ul className={'navbar'}>
         {
-          this.JsonMenu.map( item => {
+          this.JsonMenu.map(item => {
             return (
-            <MenuItem menu={item.menuTitle} />
+              <MenuItem menu={item.menuTitle} />
             )
           })
         }
-        </ul>
+      </ul>
     )
   }
 }

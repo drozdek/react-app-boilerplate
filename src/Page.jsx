@@ -13,7 +13,6 @@ export default class Page extends Component {
     return (
       <div>
         <Header />,
-      <Menu />
         <Footer />
       </div>
     )
