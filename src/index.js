@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Page from './Page.jsx';
+import App from './App.jsx';
 
 ReactDOM.render(
   <div>
-    <Page />
+    <App />
   </div>,
   document.getElementById('root')
 )

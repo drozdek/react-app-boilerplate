@@ -14,8 +14,8 @@ export default class Header extends Component {
     return (
       <div>
         <header src={Styles.Stripes}>
-          <a href="#">
-            <img src={Logo} alt="logo" className={Styles.Img} className={Styles.Name} />
+          <a href='/'>
+            <img src={Logo} alt="Rafal Drozdowski - logo" className={Styles.Img, Styles.Name} />
             <img src={Stripes} id={Styles.stripes} /></a>
         </header>
         <Menu />
