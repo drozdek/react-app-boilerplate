@@ -9,10 +9,10 @@ export default class MenuItem extends Component {
   /**
    * retrieve clicked elem
    */
-  handleClick(e) {  
-    this.menuItem = e.target.childNodes[0].nodeValue;
-    alert(this.menuItem.toLowerCase());
-  }
+  // handleClick(e) {  
+  //   this.menuItem = e.target.childNodes[0].nodeValue;
+  //   alert(this.menuItem.toLowerCase());
+  // }
 
   render() {
     return (    
