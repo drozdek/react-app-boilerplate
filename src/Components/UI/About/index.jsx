@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JsonMenu from '../Menu/Menu.json';
+import Img from './img/versatility.jpg';
 
 export default class About extends Component {
   constructor(props) {
@@ -8,7 +9,10 @@ export default class About extends Component {
 
   render() {
     return (
-      <section dangerouslySetInnerHTML={{__html: JsonMenu[1].menuText}}></section>
+      <div>
+        <img src={Img}  className={'img-responsive'}/>
+        <section dangerouslySetInnerHTML={{ __html: JsonMenu[1].menuText }}></section>
+      </div>
     )
   }
 }

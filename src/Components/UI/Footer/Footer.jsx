@@ -8,7 +8,7 @@ export default class Footer extends Component {
 
   render(){
     return(
-      <footer role="contentinfo">
+      <footer role="contentinfo" className={'col'}>
          <p>All rights reserved ©  <span id="now">2019</span> Rafal Drozdowski</p>
       </footer>
     )
