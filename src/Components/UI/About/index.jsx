@@ -10,7 +10,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <img src={Img}  className={'img-responsive'}/>
+        <img src={Img} className={'img-responsive'} />
         <section dangerouslySetInnerHTML={{ __html: JsonMenu[1].menuText }}></section>
       </div>
     )

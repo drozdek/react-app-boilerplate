@@ -6,7 +6,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        <img src={Img}  className={'img-responsive'} />
+        <img src={Img} className={'img-responsive'} />
         <section dangerouslySetInnerHTML={{ __html: JsonMenu[3].menuText }}></section>
       </div>
     )
