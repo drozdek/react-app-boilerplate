@@ -13,15 +13,10 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <div className={'col-sm-1','col-lg-1'}></div>
-        {/* <header src={Styles.Stripes}> */}
-          {/* <a href='/'>
-            <img src={Logo} alt="Rafal Drozdowski - logo" className={Styles.Img, Styles.Name} />
-            <img src={Stripes} id={Styles.stripes} /></a> */}
-        {/* </header> */}
-        <Menu className={'col-sm-10','col-lg-10'} />
-        <div className={'col-sm-1','col-lg-1'}></div>
-
+        <div className={'col-sm-1 col-md-1 col-md-1 col-lg-1'}>&nbsp;</div>
+        <div></div>
+        <Menu className={'col-sm-10 col-md-10 col-lg-10'} />
+        <div className={'col-sm-1 col-md-1 col-lg-1'}>&nbsp;</div>
       </div>
     )
   }

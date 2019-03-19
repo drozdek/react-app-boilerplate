@@ -3,6 +3,7 @@ body {
 }
 
 .navbar-nav.mr-auto{
+  padding-top:30px;
   width: 100% !important;
 }
 
@@ -11,11 +12,18 @@ body {
   text-align: center;
 }
 
+.navbar-brand {
+  padding-left: 125px;
+  padding-top:20px;
+}
+
 .navbar-nav.mr-auto li a {
   color: #fef6eb 
 }
 
-section {
+section img {
+  margin-top: 90px;
+  margin-bottom: 30px;
   height: 100%;
   display: block;  
 }
@@ -26,4 +34,8 @@ section {
 
 .img-responsive {
   width: 100%;
+}
+
+footer {
+  padding-top: 7px;
 }
