@@ -6,10 +6,10 @@ import Img from './img/websites.jpg';
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <section>
         <img src={Img} className={'img-responsive'} />
-        <section dangerouslySetInnerHTML={{ __html: JsonMenu[0].sectionImg, __html: JsonMenu[0].menuText }}></section>
-      </div>
+        <p dangerouslySetInnerHTML={{ __html: JsonMenu[0].menuText }}></p>
+      </section>
     )
   }
 }

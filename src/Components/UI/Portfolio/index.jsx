@@ -5,10 +5,10 @@ import Img from './img/versatility.jpg';
 export default class Portfolio extends Component {
   render() {
     return (
-      <div>
-        <img src={Img} className={'img-responsive'}/>
-        <section dangerouslySetInnerHTML={{ __html: JsonMenu[2].menuText }}></section>
-      </div>
+      <section>
+        <img src={Img} className={'img-responsive'} />
+        <p dangerouslySetInnerHTML={{ __html: JsonMenu[2].menuText }}></p>
+      </section>
     )
   }
 }

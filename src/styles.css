@@ -2,8 +2,17 @@ body {
   background-color: #fef6eb;
 }
 
-.navbar {
-  /* margin-top: 100px; */
+.navbar-nav.mr-auto{
+  width: 100% !important;
+}
+
+.navbar-nav.mr-auto li {
+  width: 25%;
+  text-align: center;
+}
+
+.navbar-nav.mr-auto li a {
+  color: #fef6eb 
 }
 
 section {
