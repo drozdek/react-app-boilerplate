@@ -11,16 +11,32 @@ export default class MenuItem extends Component {
    */
   handleClick(e) {  
     this.menuItem = e.target;
-    this.parent = this.menuItem.parentNode.parentNode.children;
+    this.base = this.menuItem.parentNode.parentNode;
+    this.children = this.base.children;
+    this.parent = this.base.parentNode;
 
-    for (var i=0; i<this.parent.length; i++){
-      var child = this.parent[i].children[0];
+
+    for (var i=0; i<this.children.length; i++){
+      var child = this.children[i].children[0];
       child.setAttribute('class', '');
     }
-    
+
+    /**
+     * add 'active' class to clicked item
+     */    
     if (this.menuItem.hasAttribute('href')){
       this.menuItem.setAttribute('class', 'active');
     }
+
+    /**
+     * close dropdown on link click
+     */
+    if (this.parent.hasAttribute('class', 'show')){
+      var classes = this.parent.getAttribute('class'),
+       patt = /show/g;
+      this.parent.setAttribute('class', classes.replace( patt, ''));
+    }
+
   }
 
 
