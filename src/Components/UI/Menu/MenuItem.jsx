@@ -9,14 +9,24 @@ export default class MenuItem extends Component {
   /**
    * retrieve clicked elem
    */
-  // handleClick(e) {  
-  //   this.menuItem = e.target.childNodes[0].nodeValue;
-  //   alert(this.menuItem.toLowerCase());
-  // }
+  handleClick(e) {  
+    this.menuItem = e.target;
+    this.parent = this.menuItem.parentNode.parentNode.children;
+
+    for (var i=0; i<this.parent.length; i++){
+      var child = this.parent[i].children[0];
+      child.setAttribute('class', '');
+    }
+    
+    if (this.menuItem.hasAttribute('href')){
+      this.menuItem.setAttribute('class', 'active');
+    }
+  }
+
 
   render() {
     return (    
-        <li><Link to={this.props.menu} className={Styles.linkClass}>{this.props.menu}</Link></li>
+        <li onClick={this.handleClick.bind(this)}><Link to={this.props.menu} className={Styles.linkClass}>{this.props.menu}</Link></li>
     )
   }
 }

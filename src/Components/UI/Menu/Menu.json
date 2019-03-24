@@ -8,7 +8,7 @@
     "menuID": 2,
     "menuTitle": "About",
     "menuLink": "AboutLink",
-    "menuText": "<p>Mentioned Agile <br/> I am an experienced, University-educated Front End Developer whose objective is to build up my already existing technical skills, whilst working in a team environment. I am passionate about development and always keen to work with the latest technologies.</p>  <b>Languages</p><p>X/HTML5, CSS2/3 , OO Javascript, jQuery, Backbone, RaphaelJS, PHP, MySQL, C++, Assembler, Action Script 3</p><b>debugging in iOS and Windows, and Android environments.</b><b>Mobile Platform</b><p>Phone Gap/Cordova</p><b>Versioning control systems</b>    <p>Git/GitFlow and SVN</p><b>Systems</b><p>Linux, Windows, DOS, MacOS</p><b>Applications</b><p>MS Office, Photoshop, Illustrator, Visual Web Developer, Adobe Flash</p>"
+    "menuText": "<p>I am an experienced, University-educated Front End Developer whose objective is to build up my already existing technical skills, whilst working in a team environment. I am passionate about development and always keen to work with the latest technologies against Agile.</p>  <b>Languages</B><p>X/HTML5, CSS2/3 , OO Javascript, jQuery, Backbone, RaphaelJS, PHP, MySQL, C++, Assembler, Action Script 3</p><b>debugging in iOS and Windows, and Android environments.</b><br /><br /><b>Mobile Platform</b><p>Phone Gap/Cordova</p><b>Versioning control systems</b>    <p>Git/GitFlow and SVN</p><b>Systems</b><p>Linux, Windows, DOS, MacOS</p><b>Applications</b><p>MS Office, Photoshop, Illustrator, Visual Web Developer, Adobe Flash</p>"
   },
   {
     "menuID": 3,
@@ -20,5 +20,5 @@
     "menuID": 4,
     "menuTitle": "Contact",
     "menuLink": "ContactLink",
-    "menuText": "If you have enquiries or would just like to contact me, please use the details below or fill out the form."
+    "menuText": "If you have enquiries or would just like to contact me, please use the details below or fill out the form.</p> <form id=\"contact-form\" action=\"javascript:void(0);\" method=\"post\"><div id=\"labels\" class=\"float-left\"><label for=\"usernameInp\" class=\"display-block\">Name</label><label for=\"userEmailInp\" class=\"display-block\">E-mail</label><label for=\"userDescInp\" class=\"display-block\">Message</label></div><div id=\"inputs\"><input id=\"usernameInp\" name=\"usernameInp\" type=\"text\" placeholder=\"eg. John\"/><input type=\"text\" id=\"userEmailInp\" name=\"userEmailInp\" placeholder=\"eg. john@server.com\"/><textarea id=\"userDescInp\" name=\"userDescInp\" placeholder=\"message content\"></textarea><input class=\"clear-both\" type=\"submit\" value=\"Send\" name=\"submit\" id=\"submit\"/></div>"
   }]

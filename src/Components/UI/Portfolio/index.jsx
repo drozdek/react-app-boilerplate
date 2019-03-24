@@ -7,6 +7,7 @@ export default class Portfolio extends Component {
     return (
       <section>
         <img src={Img} className={'img-responsive'} />
+        <h4 dangerouslySetInnerHTML={{__html: JsonMenu[2].menuTitle}}></h4>
         <p dangerouslySetInnerHTML={{ __html: JsonMenu[2].menuText }}></p>
       </section>
     )
