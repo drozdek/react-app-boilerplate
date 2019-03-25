@@ -74,6 +74,10 @@ input, textarea {
   line-height: 30px;
 }
 
+.labels label {
+  display: block;
+}
+
 .float-left {
   float: left;
 }
@@ -125,6 +129,12 @@ h4 {
 .active {
   border-bottom: 1px solid #fff 
 }
+
+#contact-form label {
+  line-height: 30px;
+}
+
+
 
 @media only screen and (max-width: 406px){
   body header img {
