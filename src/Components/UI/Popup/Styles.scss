@@ -5,6 +5,8 @@
 }
 
 .popup {
+  position: relative;
+  padding: 10px;
   position: fixed;
   bottom: 10%;
   left: 40%;
@@ -13,4 +15,13 @@
   width: 300px;
   background-color: rgba(255, 255, 255, 1);
   display: inline-block;
+
+  button {
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
+  }
+
 }
