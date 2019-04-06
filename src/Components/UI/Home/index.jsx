@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import JsonMenu from '../Menu/Menu.json';
-import Popup from '../Popup/index.jsx';
+import Popup from '../Popup/index';
 import Img from './img/websites.jpg';
 
 
