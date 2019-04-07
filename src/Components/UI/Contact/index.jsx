@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JsonMenu from '../Menu/Menu.json';
+import Popup from '../Popup/index';
 import Img from './img/websites.jpg';
 
 export default class Contact extends Component {
@@ -56,6 +57,7 @@ export default class Contact extends Component {
             <input id="submit" name="submit" type="submit" className={'clear-both'} value="Send" />
           </div>
         </form>
+        <Popup />
       </section>
     )
   }
