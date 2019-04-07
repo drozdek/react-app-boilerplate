@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import Footer from './Components/UI/Footer/index';
 import Header from './Components/UI/Header/index';
-import Home from './Components/UI/Home/index.jsx';
-import About from './Components/UI/About/index.jsx';
-import Portfolio from './Components/UI/Portfolio/index.jsx';
-import Contact from './Components/UI/Contact/index.jsx';
+import Home from './Components/UI/Home/index';
+import About from './Components/UI/About/index';
+import Portfolio from './Components/UI/Portfolio/index';
+import Contact from './Components/UI/Contact/index';
 
 export default class App extends Component {
   constructor(props) {
