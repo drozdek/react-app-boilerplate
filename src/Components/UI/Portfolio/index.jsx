@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JsonMenu from '../Menu/Menu.json';
+import Popup from '../Popup/index';
 import Img from './img/versatility.jpg';
 
 export default class Portfolio extends Component {
@@ -9,6 +10,7 @@ export default class Portfolio extends Component {
         <img src={Img} className={'img-responsive'} />
         <h4 dangerouslySetInnerHTML={{__html: JsonMenu[2].menuTitle}}></h4>
         <p dangerouslySetInnerHTML={{ __html: JsonMenu[2].menuText }}></p>
+        <Popup />
       </section>
     )
   }
