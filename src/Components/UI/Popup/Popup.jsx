@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import Policy from '../Policy/index';
 import Styles from './Styles.scss';
 
 class Popup extends Component {
@@ -41,7 +43,8 @@ class Popup extends Component {
           this.state.consent === false && !window.localStorage.getItem('visited') ? (
             <div className={Styles.popup}>
               <h4>Compliance Check</h4>
-              <p>This site tracks visits anonymously using localStorage. Close this dialog to confirm you are happy with that, or find out more in the best practice privacy statement.</p>
+              <p>This site tracks visits anonymously using localStorage. Close this dialog to confirm you are happy with that, or 
+                &nbsp; <Link to={'/policy'} >find out more </Link> in the privacy statement.</p>
               <button className={Styles.button} onClick={this.consentClick.bind(this)}>Agree and close</button>
             </div>
           ) : (

@@ -6,6 +6,7 @@ import Home from './Components/UI/Home/index';
 import About from './Components/UI/About/index';
 import Portfolio from './Components/UI/Portfolio/index';
 import Contact from './Components/UI/Contact/index';
+import Policy from './Components/UI/Policy/index';
 
 export default class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ export default class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
+          <Route path="/policy" component={Policy} />
           <Footer />
         </div>
       </Router>
