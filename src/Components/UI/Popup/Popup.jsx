@@ -30,20 +30,15 @@ class Popup extends Component {
       'visited', true
     )
 
-      /**
-       * add google analytics script 
-       */
+    /**
+     * add google analytics script on users' consent
+     */
 
-       const scpt = document.createElement('script');
-       let googleScript = (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-                            ga('create', 'UA-26045403-1', 'auto');
-                            ga('send', 'pageview');
-
-
-
+    const scriptNode = document.createElement('script');
+      scriptNode.type = "text/javascript";
+    let googleScript = document.createTextNode("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-26045403-1', 'auto');ga('send', 'pageview');");
+    scriptNode.appendChild(googleScript);
+    document.head.appendChild(scriptNode);
   }
 
   render() {
@@ -57,7 +52,7 @@ class Popup extends Component {
           this.state.consent === false && !window.localStorage.getItem('visited') ? (
             <div className={Styles.popup}>
               <h4>Compliance Check</h4>
-              <p>This site tracks visits anonymously using localStorage. Close this dialog to confirm you are happy with that, or 
+              <p>This site tracks visits anonymously using localStorage. Close this dialog to confirm you are happy with that, or
                 &nbsp; <Link to={'/policy'} >find out more </Link> in the privacy statement.</p>
               <button className={Styles.button} onClick={this.consentClick.bind(this)}>Agree and close</button>
             </div>
