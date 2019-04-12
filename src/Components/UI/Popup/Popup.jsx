@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import Policy from '../Policy/index';
+import Storage from '../../../Helpers/localStorage';
 import Styles from './Styles.scss';
 
 class Popup extends Component {

@@ -3,30 +3,37 @@
  */
 var Storage = function () {
   this.storage = window.localStorage
-}
+};
 
 /**
+ * @method validate
+ * @return @object 
+ */
+Storage.prototype.validate = function (obj, val) {
+  var args = [].call.arguments;
+  for (let i in args) {
+    if (typeof args[i] === "undefined" || typeof obj === null) {
+      return;
+    };
+  };
+}
+/**
  * @method getItem
+ * @param item - item to be checked
  */
 Storage.prototype.getItem = function (item) {
-  if (typeof item !== "undefined") {
+  if (this.validate(item)) {
     return this.storage.getItem(item)
-  }
-  else
-    return
-}
+  };
+};
 
 /**
  * @method setItem
+ * @param item - item to be set
+ * @param val  - value to be set
  */
 Storage.prototype.setItem = function (item, val) {
-  if (typeof item !== "undefined" && typeof val !== "undefined") {
-    return this.storage.setItem(item, val);
-  }
-  else {
-    reportError();
-    return
+  if (this.validate(item, val)) {
+    this.storage.setItem(item, val);
   }
 }
-
-
