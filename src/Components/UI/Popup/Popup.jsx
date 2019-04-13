@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import Policy from '../Policy/index';
-import Storage from '../../../Helpers/localStorage';
+import { getItem, setItem } from '../../../Helpers/localStorage';
 import Styles from './Styles.scss';
 
 class Popup extends Component {
@@ -27,9 +27,7 @@ class Popup extends Component {
     /**
      * set localStorage key 
      */
-    window.localStorage.setItem(
-      'visited', true
-    )
+    setItem('visited', true);
 
     /**
      * add google analytics script on users' consent
