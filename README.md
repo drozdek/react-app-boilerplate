@@ -4,13 +4,13 @@ Fully working React app - exactly the same have used to deploy my porfolio.
 
 Installation:
 
- 1. download / fork my repository
+ 1. fork / download repository
  
- 2. in root folder execute from cmd:
+ 2. in root folder execute from command line:
  
         npm install
   
-  3. after all packages have been installed execute from cmd:
+  3. after all packages have been installed execute from command line:
   
         npm run dev
      
