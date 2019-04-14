@@ -6,6 +6,16 @@ export default class MenuItem extends Component {
     super(props);
   }
 
+  componentDidMount(){
+    /**
+     * set active element on laod
+     */
+    let elem = document.querySelector('.navbar-nav a');
+    if (!elem.getAttribute('class')){
+      elem.setAttribute('class', 'active');
+    }
+  }
+
   /**
    * retrieve clicked elem
    */
